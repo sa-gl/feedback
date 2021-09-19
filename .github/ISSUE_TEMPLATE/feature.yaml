@@ -1,0 +1,36 @@
+name: '🌟 Feature Request'
+description: Suggest a feature for SA:GL
+title: "[Feature]"
+labels: 
+ - feature
+assignees:
+ - tmfksoft
+body:
+  - type: dropdown
+    id: affected-area
+    attributes:
+      label: Where are you suggesting a new feature for?
+      options:
+        - SA:MP Integration
+        - Cloud Integration
+        - Game Saves
+        - Gallery
+        - Statistics
+        - Other / New
+      multiple: true
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Explain what you would like to add
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups or ideas
+    validations:
+      required: false
